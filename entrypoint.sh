@@ -51,6 +51,20 @@ npx hexo clean
 echo ">>> Generate file ..."
 npx hexo generate
 
+echo ">>> Generate EN file ..."
+cd en
+echo ">>> Install NPM dependencies ..."
+npm install
+
+echo ">>> Clean cache files ..."
+npx hexo clean
+
+echo ">>> Generate file ..."
+npx hexo generate
+
+cp -r ./public ../public/en
+cd ..
+
 cd "${TARGET_PUBLISH_DIR}"
 
 # Configures Git.
