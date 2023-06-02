@@ -62,7 +62,7 @@ npx hexo clean
 echo ">>> Generate file ..."
 npx hexo generate
 
-cp -r ./public/* ../public/en/
+cp -r ./public ../public/en
 cd ..
 
 cd "${TARGET_PUBLISH_DIR}"
